@@ -47,7 +47,7 @@ oil refine migrate --packages=ninjauth
 make users table for dsauth
 
 ```
-oil refine migrate --packages=ninjauth
+oil refine migrate --packages=dsauth
 ```
 
 
