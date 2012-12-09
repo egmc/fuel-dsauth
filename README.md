@@ -71,7 +71,7 @@ return array (
 	// user table name
 	'table_name' => 'users',
 	// if true, always show confirm form for  new user
-	'always_confrim_username' => false,
+	'always_confirm_username' => false,
 	// if true, check same user name for new user
 	'allow_duplicated_username' => false,
 	'auto_modify_userinfo' => true,

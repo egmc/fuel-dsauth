@@ -27,7 +27,7 @@ class Adapter_Dsauth extends Adapter {
 	public function can_auto_login(array $user) {
 		
 		DsAuth::init();
-		if (\Config::get('dsauth.always_confrim_username')) {
+		if (\Config::get('dsauth.always_confirm_username')) {
 			return false;
 		}
 		

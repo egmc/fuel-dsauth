@@ -4,7 +4,7 @@ return array (
 	'login_hash_salt' => 'dassaiauthentication',
 	'table_columns' => array('*'),
 	'table_name' => 'users',
-	'always_confrim_username' => false,
+	'always_confirm_username' => false,
 	'allow_duplicated_username' => false,
 	'auto_modify_userinfo' => true,
 );
