@@ -14,7 +14,7 @@ use Date;
  */
 class DsAuth {
 	
-	public static function init() {
+	public static function _init() {
 		Config::load('dsauth', true);
 	}
 	
@@ -54,8 +54,6 @@ class DsAuth {
 	 * @return bool login result
 	 */
 	public static function login($user_id) {
-		
-		self::init();
 		
 		if (!$user_id) {
 			return false;
@@ -114,8 +112,6 @@ class DsAuth {
 	 */
 	public static function create_user(array $user_to_resgister) {
 
-		self::init();
-		
 		$timestamp = Date::forge()->get_timestamp();
 		
 		$user_hash = \Session::get('ninjauth.user');
@@ -160,8 +156,6 @@ class DsAuth {
 	 * @return array user
 	 */
 	public static function get_user_by_username($username) {
-		
-		self::init();
 		
 		$same_user = \DB::select_array(Config::get('dsauth.table_columns', array('*')))
 		->where('username', '=', $username)
